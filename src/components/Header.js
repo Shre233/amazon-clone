@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import logo from "../images/amazon_logo.jpg"
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 function Header() {
@@ -7,8 +8,7 @@ function Header() {
     <div className="header">
       <img
         className="header_logo"
-        src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-        alt="#"
+        src={logo} alt="#"
       />
       <div className="header_search">
         <input className="header_searchBar" type="text" />
