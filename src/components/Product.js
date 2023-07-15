@@ -1,5 +1,5 @@
 import React from "react";
-import "./product.css";
+import "./style/product.css";
 import { useStateValue } from "../ContextProvider/StateProvider";
 import CurrencyFormat from "react-currency-format";
 function Product(props) {

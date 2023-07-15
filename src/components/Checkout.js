@@ -1,5 +1,5 @@
 import React from "react";
-import "./Checkout.css";
+import "./style/Checkout.css";
 import Subtotal from "./Subtotal";
 import Banner from "../images/CheckoutBanner.jpg";
 import BasketProduct from "./BasketProduct";

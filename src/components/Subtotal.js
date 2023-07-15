@@ -1,8 +1,7 @@
 import React from "react";
-import "./Checkout.css";
+import "./style/Checkout.css";
 import CurrencyFormat from "react-currency-format";
 import { useStateValue } from "../ContextProvider/StateProvider";
-import { useState } from "react";
 import { getBasketTotal } from "../ContextProvider/reducer";
 function Subtotal() {
   const [{basket},dispatch]=useStateValue();
