@@ -17,8 +17,8 @@ function Header() {
 
   return (
     <div className="header">
-      <Link to="/">
-        <img className="logo" src={logo} alt="#" />
+      <Link style={{ textDecoration: "none" }} to="/">
+        <img className="logoBanner" src={logo} alt="#" />
       </Link>
 
       <div className="search">
@@ -27,9 +27,9 @@ function Header() {
       </div>
 
       <div className="nav">
-        <Link to={!user && "/login"}>
+        <Link style={{ textDecoration: "none" }} to={!user && "/login"}>
           <div onClick={handleAuthentication} className="option">
-            <span className="op1">Hello User</span>
+            <span className="op1">Hello, {user ? user.email : "Guest"} </span>
             <span className="op2">{user ? "Sign Out" : "Sign In"}</span>
           </div>
         </Link>
@@ -44,7 +44,7 @@ function Header() {
           <span className="op2">Prime</span>
         </div>
 
-        <Link to="/checkout">
+        <Link style={{ textDecoration: "none" }} to="/checkout">
           <div className="cartLogo">
             <ShoppingBasketIcon />
             <span className="op2 cartCount">{basket?.length}</span>
