@@ -4,7 +4,7 @@ import { useStateValue } from "../ContextProvider/StateProvider";
 import CurrencyFormat from "react-currency-format";
 function Product(props) {
   const [{ basket }, dispatch] = useStateValue();
-  console.log(basket);
+  // console.log(basket);
   const addToBasket = () => {
     dispatch({
       type: "ADD_TO_BASKET",

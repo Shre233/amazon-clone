@@ -2,16 +2,46 @@ import React, { useState } from "react";
 import "../style/Login.css";
 import AmazonLogo from "../../images/Amazon_logo2.png";
 import { Link } from "react-router-dom";
+import { auth } from "../../firebase";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+
 function Login() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const signIn = (e) => {
     e.preventDefault();
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        console.log(userCredential);
+        // const user = userCredential.user;
+        navigate('/');
+        
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
   };
 
   const register = (e) => {
     e.preventDefault();
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        console.log(userCredential);
+        // const user = userCredential.user;
+        // console.log(user);
+        if (auth) {
+          navigate("/");
+        }
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
   };
   return (
     <div className="login">
