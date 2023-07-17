@@ -22,14 +22,14 @@ function Header() {
       </Link>
 
       <div className="search">
-        <input className="searchBar" type="text" />
+        <input placeholder="Search" className="searchBar" type="text" />
         <SearchIcon className="searchIcon" />
       </div>
 
       <div className="nav">
         <Link style={{ textDecoration: "none" }} to={!user && "/login"}>
           <div onClick={handleAuthentication} className="option">
-            <span className="op1">Hello, {user ? user.email : "Guest"} </span>
+            <span className="op1">Hello, {user ? user.displayName : "Guest"} </span>
             <span className="op2">{user ? "Sign Out" : "Sign In"}</span>
           </div>
         </Link>

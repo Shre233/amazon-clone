@@ -12,7 +12,7 @@ function Checkout() {
       <div className="checkoutLeftPane">
         <img className="checkoutBanner" src={Banner} alt="" />
         <div>
-          <h3>Hello, {user?.email}</h3>
+          <h3 className="Welcome"> Hello, {user?.displayName}</h3>
           <h2 className="Title">Your Shopping Basket</h2>
           {basket.map((item) => {
             return (

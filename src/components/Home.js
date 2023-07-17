@@ -13,7 +13,7 @@ function Home() {
     <div>
       <div className="home">
         <div className="homeContainer">
-          <img className="homeImage" src={banner} alt="#" />
+            <img className="homeImage" src={banner} alt="#" />
           <div className="homeRow">
             <Product
               id="1"

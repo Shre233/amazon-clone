@@ -1,0 +1,153 @@
+.Container {
+    width: 100%;
+    background-color: #232F3E;
+}
+
+.topButton {
+    width: 100%;
+    background-color: #37475A;
+    color: #FFF;
+    height: 50px;
+    margin-top: -10px;
+    padding: 15px;
+}
+
+.OuterContainer {
+    display: flex;
+    width: 100%;
+    color: #FFF;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.InnerContainer {
+    flex: 0.16;
+    gap: 20px;
+    position: relative;
+}
+
+.InnerContainer>h4 {
+    margin-bottom: 10px;
+}
+
+.InnerContainer>p {
+    color: #DDD;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.line {
+    border-top: 1px solid #3a4553;
+    margin-top: 40px;
+}
+
+.SecondContainer {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.FooterImg {
+    width: 120px;
+    object-fit: contain;
+}
+
+.Language {
+    margin-bottom: 20px;
+    display: flex;
+    border: 1px solid #DDD;
+    padding: 5px;
+    border-radius: 5px;
+    gap: 5px;
+    justify-content: center;
+    width: 100px;
+}
+
+.Icon {
+    color: #DDD;
+    height: 20px !important;
+    padding-top: 2px;
+
+}
+
+.Language>p {
+    padding-bottom: 5px;
+    color: #DDD;
+}
+
+.ThirdContainer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Location {
+    display: flex;
+    font-size: 14px;
+    color: #DDD;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.Location2 {
+    display: flex;
+    padding-bottom: 30px;
+    font-size: 14px;
+    color: #DDD;
+    justify-content: center;
+    gap:20px;
+}
+.facilities{
+    background-color: #131A22;
+}
+
+.FacilitiesContainer{
+    font-size: 12px;
+    width:65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top:30px;
+}
+
+.FacilitiesInnerContainer{
+    flex: 0 1 calc(20% - 8px);
+    margin-bottom: 20px;
+}
+
+.FacilitiesInnerContainer > h4{
+    color:white;
+}
+.FacilitiesInnerContainer > p{
+    color:#DDD;
+}
+
+.CopyrightContainer{
+    color:white;
+    font-size: 12px;
+    width:33%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+}
+.Content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom:5px;
+}
+.CopyrightInfo{
+    text-align: center;
+    padding-bottom: 30px;
+}

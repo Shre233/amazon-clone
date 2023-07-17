@@ -10,6 +10,11 @@
     margin-bottom: 10px;
 }
 
+.Welcome{
+    margin-right: 10px;
+    padding: 10px;
+}
+
 .Title {
     margin-right: 10px;
     padding: 10px;
@@ -52,7 +57,14 @@
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
 }
+
+.basketProduct:hover {
+    transform: scale(1.03);
+}
+
 
 .bpImage {
     object-fit:contain;
