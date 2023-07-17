@@ -2,6 +2,7 @@ import React from "react";
 import "../style/Header.css";
 import logo from "../../images/amazon_logo.jpg";
 import SearchIcon from "@mui/icons-material/Search";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../../ContextProvider/StateProvider";
@@ -21,6 +22,16 @@ function Header() {
         <img className="logoBanner" src={logo} alt="#" />
       </Link>
 
+      <div className="Address">
+        <div className="demo">
+          <LocationOnIcon className="LocationIcon" />
+          <div className="detail">
+            <span className="op1">Hello</span>
+            <span className="op2">Select your address</span>
+          </div>
+        </div>
+      </div>
+
       <div className="search">
         <input placeholder="Search" className="searchBar" type="text" />
         <SearchIcon className="searchIcon" />
@@ -29,7 +40,9 @@ function Header() {
       <div className="nav">
         <Link style={{ textDecoration: "none" }} to={!user && "/login"}>
           <div onClick={handleAuthentication} className="option">
-            <span className="op1">Hello, {user ? user.displayName : "Guest"} </span>
+            <span className="op1">
+              Hello, {user ? user.displayName : "Guest"}{" "}
+            </span>
             <span className="op2">{user ? "Sign Out" : "Sign In"}</span>
           </div>
         </Link>

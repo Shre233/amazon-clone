@@ -1,6 +1,5 @@
 import React from "react";
 import "./style/Home.css";
-import banner from "../images/amazon_banner.jpg";
 import Product from "./Product";
 import Product1 from "../images/Product1.jpg";
 import Product2 from "../images/Product2.jpg";
@@ -8,12 +7,13 @@ import Product3 from "../images/Product3.jpg";
 import Product4 from "../images/Product4.jpg";
 import Product5 from "../images/Product5.jpg";
 import Product6 from "../images/Product6.jpg";
+import ImageSlider from "./Carousel/ImageSlider";
 function Home() {
   return (
     <div>
+      <ImageSlider/>
       <div className="home">
         <div className="homeContainer">
-            <img className="homeImage" src={banner} alt="#" />
           <div className="homeRow">
             <Product
               id="1"

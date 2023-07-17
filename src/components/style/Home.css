@@ -5,11 +5,22 @@
     margin-right: auto;
     max-width: 1500px;
 }
+
+.slider-container {
+    max-width: 100vw;
+    width:100%;
+    overflow: hidden;
+}
+
+
+
 .homeImage{
     width:100%;
     z-index:-1;
     mask-image:linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0));
     margin-bottom: -250px;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 .homeRow{
     display: flex;

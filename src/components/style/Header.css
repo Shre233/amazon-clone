@@ -13,13 +13,45 @@
     object-fit: contain;
     margin: 0 20px;
     margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.logoBanner:hover {
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.Address{
+    margin-right:10px;
+}
+
+.demo {
+    display: flex;
+    padding: 10px;
+}
+
+.demo:hover {
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.LocationIcon {
+    color: white;
+}
+
+.detail {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    
 }
 
 .search {
     display: flex;
     flex: 1;
     align-items: center;
-    border-radius: 24px;
 }
 
 .searchBar {
@@ -27,12 +59,16 @@
     padding: 10px;
     border: none;
     width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .searchIcon {
     padding: 5px;
     height: 22px !important;
     background-color: #cd9042;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .nav {
@@ -46,6 +82,12 @@
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
+    padding: 10px;
+}
+
+.option:hover {
+    border: 1px solid white;
+    border-radius: 3px;
 }
 
 .op1 {
@@ -60,7 +102,14 @@
 .cartLogo {
     display: flex;
     align-items: center;
-    color: white
+    color: white;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.cartLogo:hover {
+    border: 1px solid white;
+    border-radius: 3px;
 }
 
 .cartCount {
