@@ -4,12 +4,15 @@ import Amazon from "../../../images/amazon_logo.jpg";
 import LanguageIcon from "@mui/icons-material/Language";
 import { Link } from "react-router-dom";
 function Location() {
+  const goToBtn = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
   return (
     <div>
       <div className="SecondContainer">
         <div className="Navigation">
           <Link to="/">
-            <img className="FooterImg" src={Amazon} alt="" />
+            <img onClick={goToBtn} className="FooterImg" src={Amazon} alt="" />
           </Link>
           <div className="Language">
             <LanguageIcon className="Icon" />

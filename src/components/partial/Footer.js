@@ -14,7 +14,7 @@ function Footer() {
         <div className="line" />
         <Location/>
         <Facilities/>
-        <Copyright/>
+        <Copyright />
       </div>
     </div>
   );

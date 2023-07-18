@@ -3,8 +3,10 @@ import "./style/Checkout.css";
 import CurrencyFormat from "react-currency-format";
 import { useStateValue } from "../ContextProvider/StateProvider";
 import { getBasketTotal } from "../ContextProvider/reducer";
+import { useNavigate } from "react-router-dom";
 function Subtotal() {
-  const [{basket},dispatch]=useStateValue();
+  const navigate = useNavigate();
+  const [{ basket }, dispatch] = useStateValue();
   // let sum=0;
   // basket.map((item)=>{
   //   sum+=item.price;
@@ -30,7 +32,9 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"₹"}
       />
-      <button className="subtotalButton">Proceed to checkout</button>
+      <button onClick={(e) => navigate("/payment")} className="subtotalButton">
+        Proceed to checkout
+      </button>
     </div>
   );
 }

@@ -59,6 +59,7 @@
 .FooterImg {
     width: 120px;
     object-fit: contain;
+    cursor: pointer;
 }
 
 .Language {
