@@ -47,10 +47,12 @@ function Header() {
           </div>
         </Link>
 
-        <div className="option">
-          <span className="op1">Returns</span>
-          <span className="op2">& Orders</span>
-        </div>
+        <Link style={{ textDecoration: "none" }} to={user && "/orders"}>
+          <div className="option">
+            <span className="op1">Returns</span>
+            <span className="op2">& Orders</span>
+          </div>
+        </Link>
 
         <div className="option">
           <span className="op1">Your</span>

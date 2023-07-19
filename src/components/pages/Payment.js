@@ -9,7 +9,7 @@ import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "../../ContextProvider/reducer";
 import axios from "../../axios";
 import { db } from "../../firebase";
-import { doc, setDoc,collection } from "firebase/firestore";
+import { doc, setDoc, collection } from "firebase/firestore";
 
 function Payment() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -56,7 +56,8 @@ function Payment() {
         const orderDoc = doc(ordersRef, paymentIntent.id);
         await setDoc(orderDoc, {
           basket: Array.from(basket),
-          amount: paymentIntent.created,
+          amount: paymentIntent.amount,
+          time: paymentIntent.created,
         });
 
         setSucceeded(true);
@@ -92,7 +93,7 @@ function Payment() {
           <div className="PaymentAddress">
             <p>{user?.displayName}</p>
             <p>{user?.email}</p>
-            <p>123 React Lane</p>
+            <p>123 Dilshad Garden</p>
             <p>Delhi, India</p>
           </div>
         </div>
